@@ -1,6 +1,6 @@
 pipeline {
     agent { 
-        label 'simple' 
+        label 'demo' 
         }
     stages {
         stage('git commit') {
@@ -36,10 +36,7 @@ pipeline {
                 echo 'pull github repositery'
                 sudo rm -rf /var/www/html/index.html
                 sudo mv oxer-html/* /var/www/html/
-                
 
-                
-            
             '''
 
             }
